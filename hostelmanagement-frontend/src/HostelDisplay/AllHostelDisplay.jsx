@@ -35,15 +35,15 @@ class AllHostelDetails extends React.Component {
 }    
        
     render() {
-         let data = this.state.hostels[this.state.name];  // this ? is null check for us 
+         let data = this.state.hostels.filter((host) => host.hostelName===this.state.name);  // this ? is null check for us 
          
    return (
     <div>
            <NavDisplay/>
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-    <h1 class="display-4">{data?.hostelName}</h1>
-    <p class="lead">{data?.description}</p>
+    <h1 class="display-4">{data[0]?.hostelName}</h1>
+    <p class="lead">{data[0]?.description}</p>
                 </div>
             </div>
             <div class="container-fluid">
@@ -52,18 +52,18 @@ class AllHostelDetails extends React.Component {
             <div class="card">
                 <div class="card-horizontal">
                     <div class="img-square-wrapper">
-                        <img class="" src={data?.imgUrl} alt="Card image cap" height = "440px" widht="330px"/>
+                        <img class="" src={data[0]?.imgUrl} alt="Card image cap" height = "440px" widht="330px"/>
                     </div>
                     <div class="card-body">
-    <h4 class="card-title">{data?.hostelName}</h4>
+    <h4 class="card-title">{data[0]?.hostelName}</h4>
                         <p class="card-text">
                         <dl class="row">
   <dt class="col-sm-3">Price</dt>
-   <dd class="col-sm-9">{data?.pricePerBed + " INR"}</dd>
+   <dd class="col-sm-9">{data[0]?.pricePerBed + " INR"}</dd>
 
   <dt class="col-sm-3">Max Capacity</dt>
   <dd class="col-sm-9">
-    <p>{data?.bedsAvailable +" Persons Accomodation"}</p>
+    <p>{data[0]?.bedsAvailable +" Persons Accomodation"}</p>
     <p>This is a Mix Dorm.</p>
   </dd>
 
@@ -129,7 +129,8 @@ class AllHostelDetails extends React.Component {
                 </div>
                  <div class="wrap"> 
                                    {/* <Link to="/booknow">  */} 
-                <a href={"/booknow/" + data?.hostelName} type="button" class="btn btn-info">Book Now</a>
+                <a href={"/booknow/" + data[0]?.hostelName} type="button" class="btn btn-info">Book Now</a>
+                <a href={"/booknow/" + data[0]?.hostelName} type="button" class="btn btn-info">Add Review</a>
                   {/* </Link> */}
                   </div>  
              </div> 

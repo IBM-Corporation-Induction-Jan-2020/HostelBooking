@@ -18,6 +18,10 @@ import Review from "./review";
 import Booking from "./Booking/booking";
 import AllHostelDetails from "./HostelDisplay/AllHostelDisplay";
 import SuccessPage from "./SuccessPage";
+import CancelledBooking from "./Confirmation Pages/confirm";
+import BookingConfirmation from "./Confirmation Pages/SuccessFul";
+import ShowBookings from "./AdminPages/ShowBookings";
+import HostelCity from "./hostel-city";
 
 class RoutingHostels extends React.Component {
   render() {
@@ -37,19 +41,28 @@ class RoutingHostels extends React.Component {
           <Route path="/hosteldetails/:id" component = {AllHostelDetails}>
             
           </Route>
-
+          <Route path="/city/:city" component={HostelCity}></Route>
           <Route path="/hosteladd">
             <HostelAdd />
           </Route>
           <Route path="/review">
             <Review/>
           </Route>
-          <Route path="/success/:name" component = {SuccessPage}>
+          <Route path="/admin/bookings">
+            <ShowBookings/>
+          </Route>
+          <Route path="/success/:hname/:username" component = {SuccessPage}>
+         
+          </Route>
+          <Route path="/canceled/:username/:hname" component = {CancelledBooking}>
+         
+          </Route>
+          <Route path="/confirmed" component = {BookingConfirmation}>
          
           </Route>
            <Route path="/booknow/:id"  component = {Booking}>
             </Route> 
-          <Route path="">  
+          <Route path="/">  
             <HomePage />
           </Route>
          

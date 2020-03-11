@@ -59,7 +59,7 @@ class Booking extends React.Component
         }
     RedirectionOfPage=()=>{
         if(this.state.status !=0){
-            return <Redirect to ={"/success/" + this.state.hostelName}></Redirect>
+            return <Redirect to ={"/success/" + this.state.hostelName + "/"+this.state.userName}></Redirect>
         }
     }
      
@@ -95,7 +95,7 @@ class Booking extends React.Component
                             </p>
                             
                             <p className="login button"> 
-                                <a onClick={this.SubmitForm} href={"/success/" + this.state.hostelName} className="btn btn-primary" style={{color:"white"}}>Book Now</a> 
+                                <a onClick={this.SubmitForm} href={"/success/" + this.state.hostelName+ "/" + this.state.userName} className="btn btn-primary" style={{color:"white"}}>Book Now</a> 
                             </p>
                             <p className="change_link">
                                 Not Logged in yet ?

@@ -16,6 +16,9 @@ class NavDisplay extends React.Component{
       <li className="nav-item">
         <a href="/displayDest" className="nav-link" >Locations</a>
       </li>
+      <li className="nav-item">
+        <a href="/hosteladd" className="nav-link" >Add Hostel</a>
+      </li>
       <li classname="nav-item">
         <a href="/review" className="nav-link">Reviews</a>
       </li> 

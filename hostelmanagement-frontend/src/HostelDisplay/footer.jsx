@@ -87,22 +87,22 @@ class FooterDisplay extends React.Component{
       <div class="col-md-12 py-5">
         <div class="mb-5 flex-center">
 
-          <a class="fb-ic">
+        <a class="fb-ic" href = "https://www.facebook.com">
             <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
           </a>
-          <a class="tw-ic">
+          <a class="tw-ic" href = "https://www.twitter.com">
             <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
           </a>
-          <a class="gplus-ic">
+          <a class="gplus-ic" href = "https://www.google.com">
             <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
           </a>
-          <a class="li-ic">
+          <a class="li-ic" href = "https://www.linkedin.com">
             <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
           </a>
-          <a class="ins-ic">
+          <a class="ins-ic" href = "https://www.instagram.com">
             <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
           </a>
-          <a class="pin-ic">
+          <a class="pin-ic" href = "https://www.pinterest.com"> 
             <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
           </a>
         </div>

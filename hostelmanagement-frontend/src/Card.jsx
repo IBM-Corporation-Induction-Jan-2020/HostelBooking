@@ -1,5 +1,6 @@
 import React from "react";
-import axios from 'axios'
+import axios from 'axios';
+import './App.css';
 class CardDisplay extends React.Component {
 
     constructor(props) {
@@ -20,20 +21,19 @@ class CardDisplay extends React.Component {
     }
     render() {
         const i = -1;
-        const idata = this.state.hostels.map((host, i) => (
+        const idata = this.state.hostels.map((host) => (
             
-            <div class="card hostel-card">
-                <div class="container card-deck contain">
-                    
-                        <img className="card-img-top" src={host.imgUrl} alt="Card image cap" height="300px" width="250px" />
-                        <div class="card-body">
-                            <h5 class="card-title">{host.hostelName}</h5>
-                            <p class="card-text">{host.description}</p>
-                            <a href={"/hosteldetails/" + i++} class="btn btn-primary">Explore</a>
-                        </div>
-                    
+            <div class="card hostel-card ">
+                <div class="card-deck">
+                    <img className="card-img-top" src={host.imgUrl} alt="Card image cap" height="300px"/>
+                    <div class="card-body">
+                        <h5 class="card-title"><b>{host.hostelName}</b></h5>
+                        <p class="card-text">{host.description}</p>
+                        <a href={"/hosteldetails/" + host.hostelName} class="btn btn-primary">Explore</a>
+                    </div>
                 </div>
             </div>
+            
         ));
         return (<div>
             {idata}

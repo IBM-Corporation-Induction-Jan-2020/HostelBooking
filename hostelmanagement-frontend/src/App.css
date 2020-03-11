@@ -9,7 +9,7 @@
     background-color: lightgrey;
     display: inline-block;
     height: 600px;
-    width: 500px;
+    width: 400px;
     border: 2px solid #DDD;
     border-radius: 15px;
     overflow: hidden;
@@ -17,3 +17,5 @@
     margin: 10px;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
   }
+
+  
