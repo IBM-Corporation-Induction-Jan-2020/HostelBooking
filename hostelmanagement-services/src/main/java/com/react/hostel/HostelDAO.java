@@ -12,6 +12,7 @@ import org.springframework.data.mongodb.core.query.Update;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.result.DeleteResult;
 
 @SuppressWarnings("deprecation")
 public class HostelDAO {
@@ -154,6 +155,19 @@ public class HostelDAO {
 		return bookings;
 	}
 	
+	public String cancelBooking(String userName,String hostelName) {
+		
+		MongoTemplate mt = getConnection();
+		
+		Query query = new Query();
+		query.addCriteria(Criteria.where("userName").is(userName).and("hostelName").is(hostelName));
+		
+		DeleteResult temp = mt.remove(query, Booking.class,"bookings");
+		System.out.println(temp);
+		
+		return "success";
+	}
+	
 
 	public int bookHostel(Booking booking) {
 
@@ -233,10 +247,4 @@ public class HostelDAO {
 
 		return mt;
 	}
-
-	
-
-
-	
-	
 }
