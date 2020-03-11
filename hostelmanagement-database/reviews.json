@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5e60dbdc99595d2c646c68b8"},"userName":"Sahith","hostelName":"Aventura Ooty","stars":5,"review":"zzzz"}
+{"_id":{"$oid":"5e61f527845b972db861dc2f"},"userName":"Biswajit","hostelName":"The Shelter Heritage","stars":4,"review":"good"}
+{"_id":{"$oid":"5e61f69e845b972db861dc30"},"userName":"Sushma","hostelName":"Sunrise View","stars":"2","review":"AC not working"}

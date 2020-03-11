@@ -1,0 +1,12 @@
+{"_id":{"$oid":"5e60c1332f6c9a18f42fdf04"},"type":"Hostel Owner","userName":"Jeyaram","email":"jeyaramuramu@gmail.com","password":"Jeyaram33"}
+{"_id":{"$oid":"5e65d5dacbfe314288425c47"},"type":"Hostel Owner","userName":"Kaushal","email":"kaushal@gmail.com","password":"Kaushal33"}
+{"_id":{"$oid":"5e65d624cbfe314288425c48"},"type":"Hostel Owner","userName":"Aniket","email":"aniket@gmail.com","password":"Aniket33"}
+{"_id":{"$oid":"5e65d640cbfe314288425c49"},"type":"Hostel Owner","userName":"Pranav","email":"pranav@gmail.com","password":"Pranav33"}
+{"_id":{"$oid":"5e65d658cbfe314288425c4a"},"type":"Hostel Owner","userName":"Anup","email":"anup@gmail.com","password":"Anup33"}
+{"_id":{"$oid":"5e65d6c0cbfe314288425c4b"},"type":"Customer","userName":"Sahith","email":"sahith@gmail.com","password":"Sahith33"}
+{"_id":{"$oid":"5e65d6dccbfe314288425c4c"},"type":"Customer","userName":"Sushma","email":"sushma@gmail.com","password":"Sushma33"}
+{"_id":{"$oid":"5e65d6f4cbfe314288425c4d"},"type":"Customer","userName":"Sneha","email":"sneha@gmail.com","password":"Sneha33"}
+{"_id":{"$oid":"5e65d726cbfe314288425c4e"},"type":"Customer","userName":"Biswajit","email":"biswajit@gmail.com","password":"Biswajit33"}
+{"_id":{"$oid":"5e65d744cbfe314288425c4f"},"type":"Customer","userName":"Khushboo","email":"khushboo@gmail.com","password":"Khushboo33"}
+{"_id":{"$oid":"5e65dd45cbfe314288425c50"},"type":"Admin","userName":"Syam","email":"syam@gmail.com","password":"Syam33"}
+{"_id":{"$oid":"5e6728b16a5c5f6a96731f77"},"type":"Customer","userName":"Jeya1998","email":"jeya@gmail.com","password":"Jeya","_class":"com.react.hostel.User"}
