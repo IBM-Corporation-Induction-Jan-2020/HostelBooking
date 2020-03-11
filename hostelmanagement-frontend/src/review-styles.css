@@ -1,0 +1,26 @@
+.review-card-content__star {
+  list-style-type: none;
+  padding: 0;
+}
+
+.review-card-content-stars__item {
+  display: inline-block;
+}
+
+.star img {
+  width: 25px;
+}
+
+.container_review{
+  
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.bottom { 
+position : absolute;                  
+bottom:50px;                          
+right:20px;                          
+} 

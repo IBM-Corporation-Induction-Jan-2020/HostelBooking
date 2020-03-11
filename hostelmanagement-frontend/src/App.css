@@ -1,0 +1,19 @@
+.contain{
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
+
+.hostel-card {
+    background-color: lightgrey;
+    display: inline-block;
+    height: 600px;
+    width: 500px;
+    border: 2px solid #DDD;
+    border-radius: 15px;
+    overflow: hidden;
+    vertical-align: top;
+    margin: 10px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+  }
