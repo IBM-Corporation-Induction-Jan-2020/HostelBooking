@@ -109,6 +109,13 @@ public class HostelAppReactApplication {
 
 		return hd.bookHostel(booking);
 	}
+	
+	@PostMapping("/{userName}/{hostelName}/cancelbooking")
+	@ResponseBody
+	String cancelBooking(@PathVariable String userName,@PathVariable String hostelName) {
+		
+		return hd.cancelBooking(userName,hostelName);
+	}
 
 	// Cities
 
